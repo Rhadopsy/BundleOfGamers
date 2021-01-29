@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+              
+  
+  
+  
+  
+  
+  <modelVersion>4.0.0</modelVersion>
+              
+  
+  
+  
+  
+  
+  <!-- =============================================================== -->
+              
+  
+  
+  
+  
+  
+  <!-- Informations du projet -->
+              
+  
+  
+  
+  
+  
+  <!-- =============================================================== -->
+              
+  
+  
+  
+  
+  
+  <!-- ===== Informations Maven ===== -->
+              
+  
+  
+  
+  
+  
+  <groupId>fr.hextechgaming.games</groupId>
+              
+  
+  
+  
+  
+  
+  <artifactId>bundleofgamers</artifactId>
+              
+  
+  
+  
+  
+  
+  <version>1.0-SNAPSHOT</version>
+              
+  
+  
+  
+  
+  
+  <packaging>pom</packaging>
+              
+  
+  
+  
+  
+  
+  <!-- ===== Informations g?n?rales ===== -->
+              
+  
+  
+  
+  
+  
+  <name>BundleOfGamers</name>
+              
+  
+  
+  
+  
+  
+  <description>
+  	Une application Web pour jouer entre amis. 
+  </description>
+              
+  
+  
+  
+  
+  
+  <url>http://www.hextech-gaming.fr/bundleofgamers</url>
+              
+  
+  
+  
+  
+  
+  <!-- ===== Organisation ===== -->
+              
+  
+  
+  
+  
+  
+  <organization>
+                          	
+    
+    
+    
+    
+    
+    <name>HexTech-Gaming</name>
+                          	
+    
+    
+    
+    
+    
+    <url>http://www.hextech-gaming.fr/</url>
+                          
+  
+  
+  
+  
+  
+  </organization>
+              
+  
+  
+  
+  
+  
+  
+  <properties>
+                            
+    
+    
+    
+    
+    
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                          
+  
+  
+  
+  
+  
+  </properties>
+              
+  
+  
+  
+  
+  
+  <!-- ===== D?pendances ===== -->
+              
+  
+  
+  
+  
+  
+  <dependencyManagement>
+  	<dependencies>
+    	<dependency>
+     		<groupId>junit</groupId>
+     		<artifactId>junit</artifactId>
+     		<version>4.11</version>
+     		<scope>test</scope>
+   	  	</dependency>    
+  		<dependency>
+        	<groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+        	<groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+        <dependency>
+             <groupId>org.apache.bval</groupId>
+             <artifactId>bval-jsr</artifactId>
+             <version>1.1.2</version>
+             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+             <groupId>javax.servlet</groupId>
+             <artifactId>servlet-api</artifactId>
+             <version>2.5</version>
+             <scope>provided</scope>
+        </dependency>
+        <dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>5.4.27.Final</version>
+		    <type>pom</type>
+		    <scope>import</scope>
+		</dependency>
+  	</dependencies>  
+  </dependencyManagement>
+              
+  
+  
+  
+  
+  
+  
+  <!-- ===== Licences ===== -->
+              
+  
+  
+  
+  
+  
+  <licenses>
+                          	
+    
+    
+    
+    
+    
+    <license>
+                                        	
+      
+      
+      
+      
+      
+      <name>HexTech-informatique</name>
+                                            	
+      
+      
+      
+      
+      
+      <url>https://www.hextech-informatique.fr/LICENSE-1.0.txt</url>
+                                        
+    
+    
+    
+    
+    
+    </license>
+                          
+  
+  
+  
+  
+  
+  </licenses>
+              
+  
+  
+  
+  
+  
+  
+  <!-- =============================================================== -->
+              
+  
+  
+  
+  
+  
+  <!-- Modules -->
+              
+  
+  
+  
+  
+  
+  <!-- =============================================================== -->
+              
+  
+  
+  
+  
+  
+  <modules>
+                          
+    
+    
+    
+    
+    
+    <module>bundleofgamers-business</module>
+                      
+    
+    
+    
+    
+    <module>bundleofgamers-batch</module>
+                  
+    
+    
+    
+    <module>bundleofgamers-consumer</module>
+              
+    
+    
+    <module>bundleofgamers-model</module>
+          
+    
+    <module>bundleofgamers-webapp</module>
+      
+  </modules>
+            	
+
+
+
+
+
+
+</project>
